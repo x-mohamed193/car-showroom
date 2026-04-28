@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السيارات - معرض الشافعي للسيارات</title>
+  <meta name="description" content="تصفح جميع السيارات المتاحة في معرض الشافعي - تويوتا، هيونداي، كيا، نيسان بأفضل الأسعار في الدقهلية">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- ======= NAVBAR ======= -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-ar">معرض <span>الشافعي</span></span>
+      <span class="logo-en">Al-Shafei Motors · Aga, Daqahliya</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="cars.html" class="active">السيارات</a>
+      <a href="about.html">عن المعرض</a>
+      <a href="contact.html">تواصل معنا</a>
+      <a href="contact.html" class="nav-cta">🚗 احجز الآن</a>
+    </div>
+    <button class="hamburger" aria-label="قائمة التنقل">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="index.html">🏠 الرئيسية</a>
+  <a href="cars.html" class="active">🚗 السيارات</a>
+  <a href="about.html">ℹ️ عن المعرض</a>
+  <a href="contact.html">📞 تواصل معنا</a>
+</div>
+
+<!-- ======= PAGE HEADER ======= -->
+<div class="page-header">
+  <div class="page-header-content">
+    <div class="breadcrumb">
+      <a href="index.html">الرئيسية</a>
+      <span>›</span>
+      <span>السيارات</span>
+    </div>
+    <h1>جميع السيارات</h1>
+    <p>اختر من بين أرقى الطرازات العالمية بأسعار تنافسية</p>
+  </div>
+</div>
+
+<!-- ======= CARS LISTING ======= -->
+<section class="cars-page section" style="padding-top:60px;">
+  <div class="container">
+
+    <!-- Filters -->
+    <div class="filters-bar reveal">
+      <div class="search-input-wrap">
+        <input type="text" id="carSearch" class="search-input" placeholder="🔍  ابحث عن سيارة...">
+      </div>
+      <div class="filter-group">
+        <label class="filter-label">الماركة</label>
+        <select id="filterBrand" class="filter-select">
+          <option value="">جميع الماركات</option>
+          <option value="toyota">تويوتا</option>
+          <option value="hyundai">هيونداي</option>
+          <option value="kia">كيا</option>
+          <option value="nissan">نيسان</option>
+          <option value="mg">MG</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label">النوع</label>
+        <select id="filterType" class="filter-select">
+          <option value="">جميع الأنواع</option>
+          <option value="suv">SUV</option>
+          <option value="sedan">سيدان</option>
+          <option value="hatchback">هاتشباك</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label">السعر</label>
+        <select id="filterPrice" class="filter-select">
+          <option value="">جميع الأسعار</option>
+          <option value="0-800000">أقل من ٨٠٠,٠٠٠ جنيه</option>
+          <option value="800000-1200000">٨٠٠,٠٠٠ – ١.٢ مليون</option>
+          <option value="1200000-1600000">١.٢ – ١.٦ مليون</option>
+          <option value="1600000-999999999">أكثر من ١.٦ مليون</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="cars-count" id="carsCount">عرض <span>9</span> سيارة</p>
+
+    <!-- Cars Grid -->
+    <div class="cars-grid" id="carsGrid">
+
+      <!-- Toyota Corolla Cross -->
+      <div class="car-card reveal" data-brand="toyota" data-type="suv" data-price="1485000" data-name="تويوتا كورولا كروس هايبرد">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=600&q=80&auto=format" alt="تويوتا كورولا كروس" onerror="this.style.display='none'">
+          <span class="car-badge new">جديد ٢٠٢٤</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Toyota · تويوتا</div>
+          <h3 class="car-name">كورولا كروس هايبرد</h3>
+          <div class="car-year-type">٢٠٢٤ · SUV · هايبرد</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⚡</span><span class="spec-value">هايبرد</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">أوتو</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١٨٢ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">١,٤٨٥,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=1" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hyundai Tucson -->
+      <div class="car-card reveal" data-brand="hyundai" data-type="suv" data-price="1235000" data-name="هيونداي توسان بانوراما">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1623005329945-f48b7ceef950?w=600&q=80&auto=format" alt="هيونداي توسان" onerror="this.style.display='none'">
+          <span class="car-badge offer">عرض خاص</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Hyundai · هيونداي</div>
+          <h3 class="car-name">توسان بانوراما</h3>
+          <div class="car-year-type">٢٠٢٤ · SUV · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">١.٦ تيربو</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">DCT</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١٧٧ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">١,٢٣٥,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=2" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kia Sportage -->
+      <div class="car-card reveal" data-brand="kia" data-type="suv" data-price="1320000" data-name="كيا سبورتاج برايم">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1617704548623-340376564e68?w=600&q=80&auto=format" alt="كيا سبورتاج" onerror="this.style.display='none'">
+          <span class="car-badge new">جديد ٢٠٢٤</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Kia · كيا</div>
+          <h3 class="car-name">سبورتاج برايم</h3>
+          <div class="car-year-type">٢٠٢٤ · SUV · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">٢.٠</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">أوتو</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١٦٠ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">١,٣٢٠,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=3" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Toyota Camry -->
+      <div class="car-card reveal" data-brand="toyota" data-type="sedan" data-price="1850000" data-name="تويوتا كامري جراند">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=600&q=80&auto=format" alt="تويوتا كامري" onerror="this.style.display='none'">
+          <span class="car-badge new">جديد ٢٠٢٤</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Toyota · تويوتا</div>
+          <h3 class="car-name">كامري جراند</h3>
+          <div class="car-year-type">٢٠٢٤ · سيدان · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">٢.٥</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">أوتو</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">٢٠٣ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">١,٨٥٠,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=4" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hyundai Elantra -->
+      <div class="car-card reveal" data-brand="hyundai" data-type="sedan" data-price="895000" data-name="هيونداي إيلانترا">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=600&q=80&auto=format" alt="هيونداي إيلانترا" onerror="this.style.display='none'">
+          <span class="car-badge offer">تخفيض</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Hyundai · هيونداي</div>
+          <h3 class="car-name">إيلانترا سبورت</h3>
+          <div class="car-year-type">٢٠٢٤ · سيدان · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">١.٦</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">أوتو</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١٢٣ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">٨٩٥,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=5" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nissan Qashqai -->
+      <div class="car-card reveal" data-brand="nissan" data-type="suv" data-price="1180000" data-name="نيسان قشقاي">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1546614042-7df3c24c9e5d?w=600&q=80&auto=format" alt="نيسان قشقاي" onerror="this.style.display='none'">
+          <span class="car-badge new">جديد ٢٠٢٤</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Nissan · نيسان</div>
+          <h3 class="car-name">قشقاي بلاتينيوم</h3>
+          <div class="car-year-type">٢٠٢٤ · SUV · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">١.٣ تيربو</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">CVT</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١٥٨ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">١,١٨٠,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=6" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kia Cerato -->
+      <div class="car-card reveal" data-brand="kia" data-type="sedan" data-price="850000" data-name="كيا سيراتو">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80&auto=format" alt="كيا سيراتو" onerror="this.style.display='none'">
+          <span class="car-badge offer">عرض</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Kia · كيا</div>
+          <h3 class="car-name">سيراتو EX</h3>
+          <div class="car-year-type">٢٠٢٤ · سيدان · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">٢.٠</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">أوتو</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١٥٠ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">٨٥٠,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=7" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nissan Kicks -->
+      <div class="car-card reveal" data-brand="nissan" data-type="suv" data-price="780000" data-name="نيسان كيكس">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&q=80&auto=format" alt="نيسان كيكس" onerror="this.style.display='none'">
+          <span class="car-badge new">جديد</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">Nissan · نيسان</div>
+          <h3 class="car-name">كيكس SV</h3>
+          <div class="car-year-type">٢٠٢٤ · SUV · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">١.٦</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">CVT</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١١٨ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">٧٨٠,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=8" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- MG ZS -->
+      <div class="car-card reveal" data-brand="mg" data-type="suv" data-price="680000" data-name="MG ZS">
+        <div class="car-card-image">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&q=80&auto=format" alt="MG ZS" onerror="this.style.display='none'">
+          <span class="car-badge offer">قيمة ممتازة</span>
+        </div>
+        <div class="car-card-body">
+          <div class="car-brand">MG · ام جي</div>
+          <h3 class="car-name">ZS Luxury Plus</h3>
+          <div class="car-year-type">٢٠٢٤ · SUV · بنزين</div>
+          <div class="car-specs-mini">
+            <div class="spec-item"><span class="spec-icon">⛽</span><span class="spec-value">١.٥ تيربو</span><span class="spec-label">المحرك</span></div>
+            <div class="spec-item"><span class="spec-icon">🔄</span><span class="spec-value">DCT</span><span class="spec-label">الناقل</span></div>
+            <div class="spec-item"><span class="spec-icon">💪</span><span class="spec-value">١٦٩ حصان</span><span class="spec-label">القوة</span></div>
+          </div>
+          <div class="car-price-row">
+            <div class="car-price">
+              <span class="price-label">السعر</span>
+              <span class="price-value">٦٨٠,٠٠٠ <span class="price-currency">جنيه</span></span>
+            </div>
+            <a href="car-details.html?id=9" class="btn-details">التفاصيل</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-ar">معرض <span>الشافعي</span></div>
+        <div class="logo-en">Al-Shafei Motors · Est. 2008</div>
+        <p class="footer-desc">الوجهة الأولى لعشاق السيارات في الدقهلية. جودة، ثقة، واحترافية.</p>
+        <div class="footer-social">
+          <button class="social-btn">f</button>
+          <button class="social-btn">📷</button>
+          <button class="social-btn">💬</button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <div class="footer-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="cars.html">السيارات</a>
+          <a href="about.html">عن المعرض</a>
+          <a href="contact.html">تواصل معنا</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>الفلاتر</h4>
+        <div class="footer-links">
+          <a href="#">SUV</a>
+          <a href="#">سيدان</a>
+          <a href="#">هايبرد</a>
+          <a href="#">عروض خاصة</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <div class="footer-contact-item">
+          <span class="contact-icon">📞</span>
+          <span class="contact-text">01064853896</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="contact-icon">📍</span>
+          <span class="contact-text">٤٧ شارع محطة القطار، مركز أجا، الدقهلية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <p>© ٢٠٢٤ معرض <span>الشافعي</span> للسيارات · جميع الحقوق محفوظة</p>
+      <p>🇪🇬 صُنع في أجا، الدقهلية بكل <span>فخر</span></p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
